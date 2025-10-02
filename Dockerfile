@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 5000
 
 # Command to run the application when the container starts
-CMD ["flask", "run", "--host=0.0.0.0"]
+CMD ["flask", "run", "--host=0.0.0.0:8181"]
