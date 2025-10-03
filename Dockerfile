@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose port 5000 to the outside world
-EXPOSE 3000
+EXPOSE 8181
 
 # Command to run the application when the container starts
 CMD ["gunicorn", "--bind", "0.0.0.0:8181", "app:app"]
